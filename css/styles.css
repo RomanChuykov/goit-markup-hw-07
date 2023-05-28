@@ -28,7 +28,8 @@ img {
 }
 @media only screen and (min-width: 768px) {
    .container{
-    min-width: 768px;
+    max-width: 768px;
+    
   }
 }
 @media only screen and (min-width: 1158px) {
@@ -85,12 +86,7 @@ body {
   align-items: center;
   justify-content: space-around;
 }
-@media only screen and (min-width: 1158px) {
-  .nav{
-     /* margin-right: 332px; */
-    
-  }
-}
+
 .logo {
   display: inline-block;
   font-family: "Raleway";
@@ -102,7 +98,7 @@ body {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #2e2f42;
-  /* margin-right: 249px; */
+  /* amargin-right: 249px; */
   padding: 24px 0;
   margin-right: 0;
 }
@@ -233,14 +229,14 @@ text-align: center;
   }
 }
 .menu-toggle{
-  /* width: 32px;
-  height: 22px; */
-  /* position: absolute;
-  top: 0;
-  left: 0; */
-  /* margin-right: auto; */
+  /* awidth: 32px;
+  aheight: 22px; */
+  /* aposition: absolute;
+  atop: 0;
+  aleft: 0; */
+  /* amargin-right: auto; */
   padding: 0;
-  /* margin-right: auto; */
+  /* amargin-right: auto; */
   margin-left: auto;
   border: none;
   align-items: center;
@@ -312,9 +308,7 @@ text-align: center;
 .mobile-menu li:not(:last-child) {
   margin-bottom: 40px;
 }
-.mob-menu-li{
-  /* margin-bottom: 40px; */
-}
+
 .link{
   font-family: 'Roboto';
 font-style: normal;
@@ -329,6 +323,9 @@ text-transform: capitalize;
 /* OCEAN */
 
 color: #2E2F42;
+}
+.first {
+  color: #404bbf;
 }
 .menu-tel{
   font-family: 'Roboto';
@@ -347,7 +344,7 @@ color: #4D5AE5;
 }
 @media only screen and (max-width: 428px) {
   .menu-tel{
-    /* font-size: 7vw; */
+    
     font-size: calc(22px + (36 - 22) * ( (100vw - 320px) / ( 428 - 320) ));
   }
 }
@@ -376,8 +373,8 @@ color: #434455;
 .menu-socials{
   display: flex;
   max-width: 328px;
-  /* gap: 56px; */
-  /* justify-content:flex-start;   */
+  /* gaap: 56px; */
+  /* ajustify-content:flex-start;   */
   justify-content: space-between;
 }
 
@@ -401,7 +398,8 @@ color: #434455;
       rgba(46, 47, 66, 0.7)
     ),
     url(../images/mob-bg.jpg);
-    background-size: contain;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
    .hero{
@@ -445,7 +443,7 @@ color: #434455;
     url(../images/hero-bg.jpg);
   background-repeat: no-repeat;
   background-size: contain;
-  /* background-position: center;  */
+  /* baackground-position: center;  */
  }
  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
    .hero{
@@ -520,7 +518,7 @@ color: #434455;
 .articles {
   display: flex;
   flex-wrap: wrap;
-  /* gap: 72px 24px; */
+  
   row-gap: 72px;
   column-gap: 24px;
 }
@@ -541,6 +539,7 @@ letter-spacing: 0.02em;
 color: #2e2f42;
 margin-top: 0;
 margin-bottom: 8px;
+text-align: center;
 }
 
 @media only screen and (min-width: 768px) {
@@ -739,7 +738,7 @@ row-gap: 72px;
 .socials-button:hover,
 .socials-button:focus {
   background-color: #404bbf;
-  /* transition: 250ms; */
+  
 }
 
 .socials-pic {
@@ -823,9 +822,7 @@ margin-left: auto;margin-right: auto;
     max-width: 768px;
     padding-top: 100px;
     padding-bottom: 100px;
-    /* padding-left: 92px; */
-    /* margin-right: auto;
-    margin-left: auto; */
+    
   } 
 }
 @media only screen and (min-width: 1158px) {
@@ -841,73 +838,65 @@ margin-left: auto;margin-right: auto;
   align-items: baseline;
   flex-wrap: wrap;
 }
-@media only screen and (min-width: 768px) {
-  .footer-container{
-  width: 600px;
-  /* justify-content: center; */
-  /* padding-left: 108px; */
-  }
-  
-}
 
 
-@media only screen and (min-width: 1158px) {
-  .footer-container{
-  /* width: 1128px; */
-width: 1158px;
-  /* justify-content: center; */
-  /* padding-left: 108px; */
-margin-left: auto;margin-right: auto;
 
-  }
-  
-}
+
 .first-part{
   margin-left: auto;margin-right: auto;
+  margin-bottom: 72px;
 }
 
 @media only screen and (min-width: 768px) {
   .first-part {
-    margin-left: 108px;
+    margin-left:92px;
    margin-right: 24px;
     
   }
 }
 @media only screen and (min-width: 1158px) {
   .first-part{
-    
+    display: inline-block;
     margin-left: 0;
     margin-right: 120px;
+    text-align: left;
+    
   }
 }
 .footer-logo {
-  display: inline-block;
+  display: flex;
   font-family: "Raleway";
   font-style: normal;
   font-weight: 800;
   font-size: 18px;
   line-height: 1.17;
   /* identical to box height, or 117% */
-  align-items: center;
+  /* align-items: center; */
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #f4f4fd;
   margin-bottom: 16px;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: center;
+ 
+}
+@media only screen and (min-width: 768px) {
+   .footer-logo{
+    justify-content: start;
+  }
 }
 .footer-logo span {
   color: #4d5ae5;
 }
 .advert {
   max-width: 268px;
-  /* font-family: "Roboto";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px; */
+  
   line-height: 1.5;
   /* or 150% */
   letter-spacing: 0.02em;
   color: #f4f4fd;
-  margin-bottom: 72px;
+  
 }
 @media only screen and (min-width: 768px) {
   .advert{
@@ -964,11 +953,7 @@ margin-left: auto;margin-right: auto;
   
   
 }
-@media only screen and (max-width: 767px) {
-   .footer-join{
-    
-  }
-}
+
 .footer-socials {
   display: flex;
   gap: 16px;
@@ -1014,11 +999,12 @@ margin-left: auto;margin-right: auto;
  }
 }
 .footer-mail {
- width: 100%;
-  /* width: 398px; */
+  max-width: 398px;
+  width: 90vw;
   height: 40px;
   
-  padding-left: 16px;
+  /* padding-left: 16px; */
+  padding: 0 0 0 16px;
   margin-bottom: 16px;
 
   /* font-family: 'Roboto';
@@ -1040,26 +1026,21 @@ border-radius: 4px;
     width: 264px;
     margin-right: 24px;
     margin-bottom: 0;
-  }
-}
-@media only screen and (min-width: 1158px) {
-   {
-    
+   
   }
 }
 
 .footer-button {
- 
-  
+ /* width: 163px; */
+  margin: 0;
   height: 40px; 
   background: #4D5AE5;
   border-radius: 4px;
-  padding: 8px 14px 8px 24px;
+  padding: 8px 23px 8px 23px;
 
-  /* font-family: 'Roboto';
-  font-style: normal; */
+  
   font-weight: 500;
-  /* afont-size: 16px; */
+  
   line-height: 24px;
   /* identical to box height, or 150% */
 
@@ -1122,7 +1103,7 @@ border: none;
 }
 @media only screen and (min-width: 768px) {
   .modal{
-   width: 408px;
+   max-width: 408px;
    /* width: 410px; */
 
    padding: 72px 24px 24px 24px;
